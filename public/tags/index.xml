@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on TeXify2 - hugo theme | weastur</title>
-    <link>https://texify2.io/tags/</link>
-    <description>Recent content in Tags on TeXify2 - hugo theme | weastur</description>
+    <title>Tags on Kunwoo Na</title>
+    <link>https://KunwooNa.github.io/tags/</link>
+    <description>Recent content in Tags on Kunwoo Na</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>me@weastur.com (Pavel Sapezhka)</managingEditor>
-    <webMaster>me@weastur.com (Pavel Sapezhka)</webMaster>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://texify2.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://KunwooNa.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
