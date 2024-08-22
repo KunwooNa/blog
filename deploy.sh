@@ -1,36 +1,36 @@
-#!/bin/sh
-# 명령어 실패 시 스크립트 중지
-set -e
+#!/bin/bash
 
-printf "\033[0;32mGitHub에 업데이트를 배포하는 중...\033[0m\n"
+echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
-# 프로젝트 빌드
+# Build the project.
 hugo -t hugo-texify2
 
-# public 폴더로 이동
+# Go To Public folder
 cd public
-
-# 변경 사항을 Git에 추가
+# Add changes to git.
 git add .
 
-# 변경 사항 커밋
-msg="사이트 재빌드 $(date)"
-if [ -n "$*" ]; then
-    msg="$*"
+# Commit changes.
+msg="rebuilding site `date`"
+if [ $# -eq 1 ]
+  then msg="$1"
 fi
-git commit -m "$msg" || echo "변경 사항이 없습니다."
+git commit -m "$msg"
 
-# 원격 저장소에 푸시 (여기서 'master'를 원격 브랜치 이름으로 대체)
-git push origin master || echo "푸시 실패."
+# Push source and build repos.
+git push origin master
 
-# 루트 디렉토리로 돌아감
+# Come Back up to the Project Root
 cd ..
 
-# 메인 저장소 업데이트
+
+# blog 저장소 Commit & Push
 git add .
-msg="사이트 재빌드 $(date)"
-if [ $# -eq 1 ]; then
-    msg="$1"
+
+msg="rebuilding site `date`"
+if [ $# -eq 1 ]
+  then msg="$1"
 fi
-git commit -m "$msg" || echo "변경 사항이 없습니다."
-git push origin master || echo "푸시 실패."
+git commit -m "$msg"
+
+git push origin master
