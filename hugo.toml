@@ -1,14 +1,13 @@
-baseURL = "https://texify2.io"
+baseURL = "https://KunwooNa.github.io"
 disqusShortname = ""
 enableGitInfo = true
 enableRobotsTXT = true
-googleAnalytics = "G-0GZRVRLSQV"
 hasCJKLanguage = true
 languageCode = "en"
 paginate = 5
 rssLimit = 10
 theme = "hugo-texify2"
-title = "TeXify2 - hugo theme | weastur"
+title = "Kunwoo Na"
 
 [markup]
 defaultMarkdownHandler = "goldmark"
@@ -21,9 +20,7 @@ style = "tango"
   ordered = false
   startLevel = 2
 
-[author]
-email = "me@weastur.com"
-name = "Pavel Sapezhka"
+
 
 [params]
 numberedSubtitles = true
@@ -49,7 +46,3 @@ code = """
 </script>
 """
 
-[params.buymeacoffee]
-code = """
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="weastur" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FF5F5F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-"""
